@@ -10,7 +10,9 @@ export default function Commit({ item }) {
     <>
       {/* Avatar image */}
       <div>
-        <img src={committer.avatar_url} alt="Avatar" className="h-16 w-16 rounded-full" />
+        <a href={committer.html_url} target="_blank">
+          <img src={committer.avatar_url} alt="Avatar" className="h-16 w-16 rounded-full" />
+        </a>
       </div>
 
       {/* Date of commit */}
@@ -28,7 +30,14 @@ export default function Commit({ item }) {
       {/* Commit info*/}
       <div>
         <p>{commit.message}</p>
-        <p>{sha}</p>
+        <p>
+          <a
+            href={`https://github.com/jdgc2304/github-commit-viewer/commit/${sha}`}
+            target="_blank"
+          >
+            {sha}
+          </a>
+        </p>
       </div>
     </>
   );
