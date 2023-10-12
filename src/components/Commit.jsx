@@ -37,6 +37,7 @@ export default function Commit({ item }) {
         <p className="text-sm font-bold text-blue-500">
           <a
             href={`https://github.com/jdgc2304/github-commit-viewer/commit/${sha}`}
+            className="hover:text-blue-800"
             target="_blank"
           >
             {sha}
