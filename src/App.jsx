@@ -22,7 +22,19 @@ function App() {
     fetchCommits(url);
   }, []);
 
-  return <button onClick={() => console.log(data)}>Show commits</button>;
+  return (
+    <div className="container">
+      <h1 className="text-3xl">GitHub Commit Viewer</h1>
+      <ul>
+        {data.map((item) => (
+          <li>
+            {`Message: ${item.commit.message} Date: ${item.commit.author.date} Sha: ${item.sha} `}
+            {`Name: ${item.commit.author.name} Mail: ${item.commit.author.email}`}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default App;
