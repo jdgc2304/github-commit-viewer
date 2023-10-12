@@ -24,10 +24,10 @@ function App() {
   }, []);
 
   return (
-    <div className="container">
-      <h1 className="text-3xl">GitHub Commit Viewer</h1>
+    <div className="container mx-auto px-4">
+      <h1 className="text-3xl font-bold title">GitHub Commit Viewer</h1>
       {data.map((item) => (
-        <Commit key={item.node_id} item={item}></Commit>
+        <Commit key={item.node_id} item={item} />
       ))}
     </div>
   );

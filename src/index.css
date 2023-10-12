@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    background: linear-gradient(90deg, rgba(30,27,64,1) 0%, rgba(59,7,100,1) 50%, rgba(80,7,36,1) 100%);
+}
+
+.title {
+    color: white;
+    text-align: center;
+    margin-top: 0.6rem;
+}
