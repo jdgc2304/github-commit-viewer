@@ -11,3 +11,21 @@ html {
     text-align: center;
     margin-top: 0.6rem;
 }
+
+.commit {
+    margin-top: 1rem;
+    border-radius: 15px;
+}
+
+.avatar {
+    min-width: 64px;
+}
+
+.date {
+    background: linear-gradient(to bottom left, #fd0000 0, rgb(125, 37, 240) 50%, #0026ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
