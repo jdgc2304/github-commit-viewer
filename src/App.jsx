@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Commit from "./components/Commit";
 import "./index.css";
 
 function App() {
@@ -25,14 +26,9 @@ function App() {
   return (
     <div className="container">
       <h1 className="text-3xl">GitHub Commit Viewer</h1>
-      <ul>
-        {data.map((item) => (
-          <li>
-            {`Message: ${item.commit.message} Date: ${item.commit.author.date} Sha: ${item.sha} `}
-            {`Name: ${item.commit.author.name} Mail: ${item.commit.author.email}`}
-          </li>
-        ))}
-      </ul>
+      {data.map((item) => (
+        <Commit key={item.node_id} item={item}></Commit>
+      ))}
     </div>
   );
 }
