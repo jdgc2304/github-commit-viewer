@@ -19,7 +19,7 @@ npm install
 ### Start Application
 
 ```sh
-npm start
+npm run preview
 ```
 
 ## Demo
