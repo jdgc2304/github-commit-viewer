@@ -1,8 +1,27 @@
-# React + Vite
+# GitHub Commit Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple app built with vite-react, tailwindcss and the GitHub API, that shows the git commit history of this repository.
 
-Currently, two official plugins are available:
+## Build Instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Clone Repository
+
+```sh
+git clone https://github.com/jdgc2304/github-commit-viewer
+```
+
+### Install Dependencies
+
+```sh
+npm install
+```
+
+### Start Application
+
+```sh
+npm start
+```
+
+## Demo
+
+- https://github-commit-viewer.vercel.app/
